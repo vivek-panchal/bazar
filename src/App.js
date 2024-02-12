@@ -1,5 +1,5 @@
 import React from "react";
-import { inject } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import {
   createBrowserRouter,
@@ -61,6 +61,7 @@ function App() {
     <div className="font-bodyFont">
       <RouterProvider router={router} />
       <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
