@@ -1,4 +1,7 @@
 import React from "react";
+import { inject } from '@vercel/analytics';
+ 
+inject();
 import {
   createBrowserRouter,
   Outlet,
